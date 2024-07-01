@@ -30,8 +30,7 @@ function ticket(age, student) {
         return 'Erreur, veuillez rentrer un STR';
     }
     else {
-        student = student.toUpperCase() 
-        student = student.trim()
+        student = student.toUpperCase().trim() 
     }
     if (age > 18 && student === 'N') {
         return '10 Balles mon poulet !';
