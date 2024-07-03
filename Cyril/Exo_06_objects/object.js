@@ -7,16 +7,16 @@ Filtrer par Genre : Ajoutez un filtre qui permet à l'utilisateur de sélectionn
 */
 
 class Movie {
-  constructor(title, year, genra, mark, duration) {
+  constructor(title, year, genre, mark, duration) {
     this.title = title;
     this.year = year;
-    this.genra = genra;
+    this.genre = genre;
     this.mark = mark;
     this.duration = duration;
   }
 }
-function setMovie(title, year, genra, mark, duration) {
-  let movie = new Movie(title, year, genra, mark, duration);
+function setMovie(title, year, genre, mark, duration) {
+  let movie = new Movie(title, year, genre, mark, duration);
   return console.log(`${movie.title} ajouté`);
 }
 

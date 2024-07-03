@@ -1,0 +1,29 @@
+/* Assurer que toutes les images ont la même taille et sont recadrées */
+#images {
+    display: flex;                 /* Utiliser Flexbox pour la mise en page */
+    gap: 10px;                     /* Espacement entre les images */
+    justify-content: center;       /* Centrer les images horizontalement */
+    align-items: center;           /* Centrer les images verticalement */
+    height: 100vh;                 /* S'assurer que la section occupe toute la hauteur */
+}
+
+#images img {
+    width: 400px;                  /* Définir la largeur des images */
+    height: 400px;                 /* Définir la hauteur des images */
+    object-fit: cover;             /* Recadrer les images pour remplir la taille définie */
+    flex-shrink: 0;                /* Empêcher les images de rétrécir */
+    border: 2px solid #000;        /* Ajouter une bordure pour mieux voir les images */
+    border-radius: 10px;           /* Optionnel : coins arrondis */
+}
+
+/* Style de la balise <p> */
+#text {
+    text-align: center;            /* Centrer le texte */
+    font-size: 1.2em;              /* Augmenter légèrement la taille de la police */
+    color: #333;                   /* Couleur du texte */
+    max-width: 600px;              /* Limiter la largeur du paragraphe */
+    padding: 10px;                 /* Ajouter un peu de padding */
+    background-color: #f9f9f9;     /* Couleur de fond pour contraster */
+    border: 1px solid #ccc;        /* Bordure légère */
+    border-radius: 8px;            /* Coins arrondis */
+}
