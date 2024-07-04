@@ -1,4 +1,8 @@
-/* Assurer que toutes les images ont la même taille et sont recadrées */
+:root {
+    text-align: center;
+}
+
+
 #images {
     display: flex;                 /* Utiliser Flexbox pour la mise en page */
     gap: 10px;                     /* Espacement entre les images */

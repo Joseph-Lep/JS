@@ -1,0 +1,12 @@
+:root {
+    text-align: center;
+}
+
+#urls {              
+    justify-content: center;       
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 5%;
+    object-fit: cover;   
+}
