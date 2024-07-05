@@ -1,0 +1,21 @@
+:root {
+    margin: 5px;
+}
+
+img {
+    display: flex;
+    justify-content: center;       
+    align-items: center;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+#miniatureParent {
+    display: flex;
+    flex-direction: row;
+}
+
+.redborder {
+    border: solid red 10px;
+}
