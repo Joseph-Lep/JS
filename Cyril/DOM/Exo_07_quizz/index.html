@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quizz</title>
+  </head>
+  <body>
+    <section>
+      <div id="scoreCounter"></div>
+      <!-- Score -->
+      <div id="questionCounter"></div>
+      <!-- nbr Q répondues sur total -->
+      <img id="countryPhoto" src="" alt="" />
+      <form>
+        <label for="userInput"
+          >Quel pays est-ce ?
+          <input id="userInput" type="text" name="userInput" />
+        </label>
+        <button id="validateAnswer">Valider la réponse</button>
+      </form>
+      <!-- Valider -->
+      <button id="getClue">Obtenir un indice</button>
+      <!-- Indice -->
+      <p id="inputRegexError"></p>
+      <p id="clue"></p>
+      <p id="userErrors"></p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
