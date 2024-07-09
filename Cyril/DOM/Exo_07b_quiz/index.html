@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz géo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="screen-finish" class="hidden">
+      <div>
+        <h1>Félicitations !</h1>
+        <p class="score">
+          Votre score final est <span class="final-score">0</span>/<span
+            class="max-score"
+            >0</span
+          >
+        </p>
+        <button id="restart">Recommencer ?</button>
+      </div>
+    </section>
+    <section id="game">
+      <section id="quiz">
+        <img id="quiz-image" src="imgs/img1.avif" alt="Image to guess" />
+        <form>
+          <input type="text" name="guess" id="player-guess" required />
+          <div class="buttons">
+            <button type="submit" id="validate" disabled>
+              Valider ma réponse
+            </button>
+            <p id="mistake"></p>
+          </div>
+        </form>
+        <section id="hint-section">
+          <div class="container">
+            <button id="get-hint">Prenez un indice</button>
+            <p id="hint"></p>
+          </div>
+        </section>
+        <p>
+          Nombre d'essais faits :
+          <span id="tries-remaining">0</span> (Max :
+          <span id="max-number-of-tries">0</span>)
+        </p>
+      </section>
+      <section id="score">
+        <div class="container">
+          <img src="imgs/quiz.webp" alt="Quiz logo" />
+          <div>
+            <h2>Score en cours de partie</h2>
+            <p class="score">
+              Score : <span class="final-score">0</span>/<span class="max-score"
+                >0</span
+              >
+            </p>
+            <p>
+              Pays : <span id="current-country-number">0</span>/<span
+                id="max-countries"
+                >0</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

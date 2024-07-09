@@ -1,0 +1,135 @@
+/* GENERAL */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+button:enabled {
+  background-color: #2e7230;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #91f895;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* SPECIFIC CSS */
+
+#game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+#game #quiz {
+  width: 60%;
+  margin: 50px;
+}
+
+#game #quiz form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#game #quiz .buttons {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#game #quiz .buttons p {
+  margin: 0;
+}
+
+#game #quiz img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: black 1px solid;
+}
+
+#game #quiz #hint-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+#game #quiz #hint-section p {
+  margin: 0;
+}
+
+#game #quiz #hint-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#game #quiz #get-hint {
+  background-color: #4e0f18;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#game #score {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(212, 186, 186);
+  border-left: #4e0f18 1px solid;
+}
+
+.score {
+  font-weight: bold;
+}
+
+#screen-finish {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#score .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#score .container img {
+  width: 200px;
+  height: 175px;
+  object-fit: cover;
+}
